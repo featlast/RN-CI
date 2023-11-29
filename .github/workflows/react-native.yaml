@@ -31,5 +31,4 @@ jobs:
           appcenter distribute release\
            --app Panthera/applications\
            --file app/build/outputs/apk/debug/app-debug.apk\
-           --group "Collaborator"\
            --token ${{ secrets.APP_CENTER_TOKEN }}
