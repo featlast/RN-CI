@@ -25,6 +25,8 @@ jobs:
 
       - name: deploy
         run: |
+        sed -i 's/CHANGE_ME/${{ secrets.APP_CENTER_TOKEN }}/g' app/src/main/assets/appcenter-config.json
+         cat app\src\main\assets\appcenter-config.json
           cd android
           appcenter distribute release\
            --app Panthera/applications\
