@@ -27,7 +27,7 @@ jobs:
         run: |
           cd android
           sed -i 's/CHANGE_ME/${{ secrets.APP_CENTER_TOKEN }}/g' app/src/main/assets/appcenter-config.json
-          cat app\src\main\assets\appcenter-config.json
+          cat app/src/main/assets/appcenter-config.json
           appcenter distribute release\
            --app Panthera/applications\
            --file app/build/outputs/apk/debug/app-debug.apk\
